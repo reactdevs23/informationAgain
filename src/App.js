@@ -4,9 +4,9 @@ import MainComponent from "./components/MainComponent/MainComponent";
 
 function App() {
   const [allData, setAllData] = useState({
-    fontFamily: "'Inter', sans-serif",
+    fontFamily: "'IBM Plex Sans', sans-serif",
     mainBg: "#fff",
-    border: "1px solid #D0D5DD",
+    border: "#D0D5DD",
     firstRow: [
       {
         smallCircle: {
@@ -17,17 +17,20 @@ function App() {
           title: "Academic viewpoints",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
 
         infoContainer: {
           info: "Academic & grey literature systemic review ",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
         header: {
           heading: "Published  ",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
       },
       {
@@ -40,17 +43,20 @@ function App() {
           title: "Professional viewpoints ",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
 
         infoContainer: {
           info: "Key informant, expert, stakeholder interviews ",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
         header: {
           heading: "Unpublished ",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
       },
     ],
@@ -70,6 +76,7 @@ function App() {
           title: "Organizational viewpoints",
           color: "#000",
           bg: "#fff",
+          border: "1px solid #D0D5DD",
         },
 
         infoContainer: {
@@ -83,7 +90,9 @@ function App() {
           labelColor: "#000",
           info: "Collect existing knowledge",
           infoColor: "#000",
+
           bg: "#F2F4F7",
+          containerBg: "#fff",
         },
       },
       {
@@ -109,6 +118,7 @@ function App() {
           info: "Generate new knowledge",
           infoColor: "#000",
           bg: "#F2F4F7",
+          containerBg: "#fff",
         },
       },
     ],

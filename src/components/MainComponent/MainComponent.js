@@ -36,7 +36,10 @@ const MainComponent = ({ firstRow, lastRow, border, centerContent }) => {
             </div>
           </div>
           <div className={classes.right}>
-            <div className={classes.header}>
+            <div
+              className={classes.header}
+              style={{ "--bg": firstRow[0].header.bg }}
+            >
               <h2
                 className={classes.heading}
                 style={{ "--color": firstRow[1].header.color }}
@@ -222,7 +225,10 @@ const MainComponent = ({ firstRow, lastRow, border, centerContent }) => {
         <div className={classes.grid}>
           <div className={classes.left}>
             <div style={{ width: viewPointContainerWidth }}></div>
-            <div className={classes.approachContainer}>
+            <div
+              className={classes.approachContainer}
+              style={{ "--bg": lastRow[0].approach.containerBg }}
+            >
               {" "}
               <div
                 className={classes.approachWrapper}
@@ -245,7 +251,10 @@ const MainComponent = ({ firstRow, lastRow, border, centerContent }) => {
             </div>
           </div>
           <div className={classes.right}>
-            <div className={classes.approachContainer}>
+            <div
+              className={classes.approachContainer}
+              style={{ "--bg": lastRow[1].approach.containerBg }}
+            >
               <div
                 className={classes.approachWrapper}
                 style={{ "--bg": lastRow[1].approach.bg }}
@@ -254,7 +263,7 @@ const MainComponent = ({ firstRow, lastRow, border, centerContent }) => {
                   className={classes.label}
                   style={{ "--color": lastRow[1].approach.labelColor }}
                 >
-                  {lastRow[0].approach.label}
+                  {lastRow[1].approach.label}
                 </p>{" "}
                 <p
                   className={classes.info}
