@@ -19,6 +19,7 @@
   border-top-right-radius: 10px;
   border-bottom: none;
   width: 100%;
+  background: var(--bg);
 }
 .heading {
   color: var(--color);
@@ -61,11 +62,13 @@
 }
 .viewPointContainer {
   display: flex;
-
   align-items: center;
   padding: 30px;
-
   position: relative;
+  background: var(--bg);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: var(--border);
 }
 .viewPointContainer .circle {
   position: absolute;
@@ -81,8 +84,12 @@
 
 .right .viewPointContainer {
   border: 0;
+  border-left: var(--border);
 
   justify-content: flex-end;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .right .viewPointContainer .circle {
   right: 0;
@@ -113,36 +120,21 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-left: var(--border);
+
   border-right: var(--border);
+  background: var(--bg);
 }
+.right .infoContainer {
+  border: 0;
+  border-left: var(--border);
+}
+
 .row1 .infoContainer {
   padding-bottom: 55px;
 }
 .row2 .infoContainer {
   padding-top: 55px;
 }
-
-/* .unPublished .infoContainer:first-child:before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 1px;
-  background: var(--border);
-  top: -1px;
-  left: 0;
-  transform: translateX(-100%);
-} */
-/* .unPublished .infoContainer:last-child:before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 1px;
-  background: var(--border);
-  bottom: -1px;
-  left: 0;
-  transform: translateX(-100%);
-} */
 
 .info {
   color: var(--color);

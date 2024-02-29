@@ -23,10 +23,13 @@ const MainComponent = ({ firstRow, lastRow, border, centerContent }) => {
         <div className={classes.grid}>
           <div className={classes.left}>
             <div style={{ width: viewPointContainerWidth }}></div>
-            <div className={classes.header}>
+            <div
+              className={classes.header}
+              style={{ "--bg": firstRow[0].header.bg }}
+            >
               <h2
                 className={classes.heading}
-                style={{ "--color": firstRow[0].header.headingColor }}
+                style={{ "--color": firstRow[0].header.color }}
               >
                 {firstRow[0].header.heading}
               </h2>
@@ -36,7 +39,7 @@ const MainComponent = ({ firstRow, lastRow, border, centerContent }) => {
             <div className={classes.header}>
               <h2
                 className={classes.heading}
-                style={{ "--color": firstRow[1].header.headingColor }}
+                style={{ "--color": firstRow[1].header.color }}
               >
                 {firstRow[1].header.heading}
               </h2>
